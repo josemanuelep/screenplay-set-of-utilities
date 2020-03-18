@@ -1,8 +1,8 @@
 public class Driver {
 
-    private  WebDriver webDriverInstance = SerenityWebdriverManager.inThisTestThread().getCurrentDriver();
+    private static WebDriver webDriverInstance = SerenityWebdriverManager.inThisTestThread().getCurrentDriver();
 
-    public WebDriver getWebDriverInstance() {
+    public static WebDriver getWebDriverInstance() {
         return webDriverInstance;
     }
 }
