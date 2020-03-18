@@ -1,0 +1,16 @@
+public class ListPrint implements Interaction {
+    private List<WebElementFacade> list;
+    public static ListPrint theElements(List<WebElementFacade> list){
+        return new ListPrint(list);
+    }
+    public ListPrint(List<WebElementFacade> list) {
+        this.list = list;
+    }
+    @Override
+    public <T extends Actor> void performAs(T actor) {
+
+        for (WebElementFacade element :list) {
+            CustomLogger.printMessage(element.getText());
+        }
+    }
+}
