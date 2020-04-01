@@ -6,3 +6,9 @@
 * Examples and code snnipets to make easy the automation with webDriver
 
 As well, two files with the configuration of pipelines as .json 
+
+## Usefull comands 
+
+### To run a specific runner associated to a feature test
+
+- `gradle clean test --tests NombreDelrunner aggregate --info`
