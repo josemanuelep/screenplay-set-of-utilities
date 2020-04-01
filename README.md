@@ -12,4 +12,4 @@ As well, two files with the configuration of pipelines as .json
 
 ### To run a specific runner associated to a feature test
 
-- `gradle clean test --tests NombreDelrunner aggregate --info`
+- `gradle clean test --tests runnerName aggregate --info`
